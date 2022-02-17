@@ -5,6 +5,13 @@
 *.so
 *.dylib
 
+.idea/
+*.log
+*.iml
+*.xml
+*.tmp
+.DS_Store
+
 # Test binary, built with `go test -c`
 *.test
 
