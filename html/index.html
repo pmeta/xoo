@@ -16,7 +16,7 @@
 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <meta content="index, follow" name="robots">
-    <title>秀哦工作室</title>
+    <title>{{ .title }}</title>
     <link href="http://gmpg.org/xfn/11" rel="profile">
     <link href="https://5f61b43aab355.t74.qifeiye.com/xmlrpc.php" rel="pingback">
 
@@ -27,12 +27,12 @@
     <script src="https://5f61b43aab355.t74.qifeiye.com/FeiEditor/bitSite/js/respond.min.js"></script>
     <![endif]-->
     <style id="static-stylesheet" type="text/css"></style>
-    <link href="static/8c0539073d1178f8860d1b0f9372e48f.css" media="all" rel="stylesheet" type="text/css">
+    <link href="{{ .staticRoot }}/8c0539073d1178f8860d1b0f9372e48f.css" media="all" rel="stylesheet" type="text/css">
     <!-- Cache! -->
     <style type="text/css">
 
     </style>
-    <script src="static/jquery.js" type="text/javascript"></script>
+    <script src="{{ .staticRoot }}/jquery.js" type="text/javascript"></script>
     <script>var geURL = 'https://5f61b43aab355.t74.qifeiye.com/ge/index.html?embed=1&ui=embed&spin=1&modified=unsavedChanges&proto=json&lang=zh';</script>
     <link href="https://5f61b43aab355.t74.qifeiye.com/xmlrpc.php?rsd" rel="EditURI" title="RSD"
           type="application/rsd+xml">
@@ -259,10 +259,10 @@
 
                 <div class="wf-td bit-logo-bar" id="branding" style="">
                     <a class="bitem logo small" href="https://5f61b43aab355.t74.qifeiye.com/"
-                       style="display: table-cell;"><span class="logospan"><img alt="秀哦工作室"
+                       style="display: table-cell;"><span class="logospan"><img alt="{{ .title }}"
                                                                                 class="preload-me"
                                                                                 height="103"
-                                                                                src="static/544a4e745ff1a012c235b8eca42878be-90.webp"
+                                                                                src="{{ .staticRoot }}/544a4e745ff1a012c235b8eca42878be-90.webp"
                                                                                 width="144"></span></a>
                     <div class="bitem text" style="display: table-cell;vertical-align: middle;"><a
                             href="https://5f61b43aab355.t74.qifeiye.com/" style="text-decoration: none;">
@@ -415,7 +415,7 @@
                                                                                  style="display:inline-block;position:relative;max-width:100%;">
                                                                                 <div class="header_title"
                                                                                      style="font-family:f0cb58ed4ee6b8d3c5e2d46436cbf1f27;font-size:50px;font-weight:normal;font-style:normal;color:#ffffff;">
-                                                                                    秀哦工作室
+                                                                                    {{ .title }}
                                                                                 </div>
                                                                             </div>
                                                                             <style></style>
@@ -539,7 +539,7 @@
                                                                                     data-title="bannerpng"
                                                                                     description=""
                                                                                     height="420"
-                                                                                    src="static/28a4653dc819f75023633b26a49f9ab7-90.webp"
+                                                                                    src="{{ .staticRoot }}/28a4653dc819f75023633b26a49f9ab7-90.webp"
                                                                                     src-img=""
                                                                                     style="" title=""
                                                                                     width="450"></div>
@@ -875,7 +875,7 @@
                                                                                     data-title="01"
                                                                                     description=""
                                                                                     height="350"
-                                                                                    src="static/61788b4c6574ceba4525eac5f1071a3b-90.webp"
+                                                                                    src="{{ .staticRoot }}/61788b4c6574ceba4525eac5f1071a3b-90.webp"
                                                                                     src-img=""
                                                                                     style="" title="" width="350">
                                                                             </div>
@@ -1100,7 +1100,7 @@
                                                                                                             data-attach-id="15250"
                                                                                                             data-title="65"
                                                                                                             description=""
-                                                                                                            src="static/ef38c0223e782d981ef869db680912c4-65x65-90.webp"
+                                                                                                            src="{{ .staticRoot }}/ef38c0223e782d981ef869db680912c4-65x65-90.webp"
                                                                                                             src-img=""
                                                                                                             style=""
                                                                                                             title="">
@@ -1226,7 +1226,7 @@
                                                                                                             data-attach-id="15253"
                                                                                                             data-title="68"
                                                                                                             description=""
-                                                                                                            src="static/1bc3c2b3940b8b4fff2618eb29275166-65x65-90.webp"
+                                                                                                            src="{{ .staticRoot }}/1bc3c2b3940b8b4fff2618eb29275166-65x65-90.webp"
                                                                                                             src-img=""
                                                                                                             style=""
                                                                                                             title="">
@@ -1354,7 +1354,7 @@
                                                                                                             data-attach-id="15252"
                                                                                                             data-title="67"
                                                                                                             description=""
-                                                                                                            src="static/11131bd73fc6a45bc7057ca1c79bf54d-65x65-90.webp"
+                                                                                                            src="{{ .staticRoot }}/11131bd73fc6a45bc7057ca1c79bf54d-65x65-90.webp"
                                                                                                             src-img=""
                                                                                                             style=""
                                                                                                             title="">
@@ -1480,7 +1480,7 @@
                                                                                                             data-attach-id="15251"
                                                                                                             data-title="66"
                                                                                                             description=""
-                                                                                                            src="static/34ce45c2d46d4a946246eddf77eff21b-65x65-90.webp"
+                                                                                                            src="{{ .staticRoot }}/34ce45c2d46d4a946246eddf77eff21b-65x65-90.webp"
                                                                                                             src-img=""
                                                                                                             style=""
                                                                                                             title="">
@@ -1781,7 +1781,7 @@
                                                                                                             data-title="01"
                                                                                                             description=""
                                                                                                             height="350"
-                                                                                                            src="static/61788b4c6574ceba4525eac5f1071a3b-90.webp"
+                                                                                                            src="{{ .staticRoot }}/61788b4c6574ceba4525eac5f1071a3b-90.webp"
                                                                                                             src-img=""
                                                                                                             style=""
                                                                                                             title=""
@@ -1906,7 +1906,7 @@
                                                                                                             data-title="04"
                                                                                                             description=""
                                                                                                             height="350"
-                                                                                                            src="static/5fcd159ed576f0ef44796f3b03f8ab8e-90.webp"
+                                                                                                            src="{{ .staticRoot }}/5fcd159ed576f0ef44796f3b03f8ab8e-90.webp"
                                                                                                             src-img=""
                                                                                                             style=""
                                                                                                             title=""
@@ -2033,7 +2033,7 @@
                                                                                                             data-title="03"
                                                                                                             description=""
                                                                                                             height="350"
-                                                                                                            src="static/ac2bb916d44c923a7e43d65d6a821cc1-90.webp"
+                                                                                                            src="{{ .staticRoot }}/ac2bb916d44c923a7e43d65d6a821cc1-90.webp"
                                                                                                             src-img=""
                                                                                                             style=""
                                                                                                             title=""
@@ -2158,7 +2158,7 @@
                                                                                                             data-title="02"
                                                                                                             description=""
                                                                                                             height="350"
-                                                                                                            src="static/758bef97ed5329e77f6dc496e0d09e73-90.webp"
+                                                                                                            src="{{ .staticRoot }}/758bef97ed5329e77f6dc496e0d09e73-90.webp"
                                                                                                             src-img=""
                                                                                                             style=""
                                                                                                             title=""
@@ -2761,7 +2761,7 @@
                                                                                     data-title="565"
                                                                                     description=""
                                                                                     height="340"
-                                                                                    src="static/f84d44ea87c092405a96cae14c758f5f-90.webp"
+                                                                                    src="{{ .staticRoot }}/f84d44ea87c092405a96cae14c758f5f-90.webp"
                                                                                     src-img=""
                                                                                     style="" title=""
                                                                                     width="540"></div>
@@ -2861,7 +2861,7 @@
                                                                      style="position: relative;;;line-height:1.5em;;background-position:left top;background-repeat: no-repeat;;margin-top:0;margin-bottom:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border-radius:0px;">
                                                                     <div class="qfe_wrapper ">
                                                                         <div style="text-align: center;">
-                                                                            <span style="font-size: 14px;">Copyright &nbsp;© 2022 &nbsp;秀哦工作室.&nbsp; All rights reserved</span>
+                                                                            <span style="font-size: 14px;">Copyright &nbsp;© 2022 &nbsp;{{ .title }}.&nbsp; All rights reserved</span>
                                                                             <p style="font-size: 14px; color: 0a0a0a"><a
                                                                                     href="https://beian.miit.gov.cn/"
                                                                                     target="_blank">浙ICP备18053740号-3</a>
@@ -3010,8 +3010,8 @@
 
     /* ]]> */
 </script>
-<script src="static/1c41b7d8a30a74f4b4c1a15c8cdc5329.js" type="text/javascript">/*Cache!*/</script>
-<link href="static/5f153f33c0a7dafa542d4f186dcc9a28.css" media="all" rel="stylesheet" type="text/css">
+<script src="{{ .staticRoot }}/1c41b7d8a30a74f4b4c1a15c8cdc5329.js" type="text/javascript">/*Cache!*/</script>
+<link href="{{ .staticRoot }}/5f153f33c0a7dafa542d4f186dcc9a28.css" media="all" rel="stylesheet" type="text/css">
 <!-- Cache! -->
 <style type="text/css">
 
