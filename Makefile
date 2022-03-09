@@ -14,7 +14,7 @@ all: image pkg
 binary: init
 	export GOOS=linux
 	export GOPROXY=https://goproxy.cn,direct
-	go build -ldflags " \
+	CGO_ENABLED=0 go build -ldflags " \
 		-X 'main.commitId=${commitId}' \
 		-X 'main.branch=${branch}' \
 		-X 'main.version=${version}' \
