@@ -42,7 +42,7 @@ func main() {
 	router := gin.Default()
 	html, _ := template.ParseFS(index, "html/*.html")
 	router.SetHTMLTemplate(html)
-	router.Any(path.Join(*webPrefix, ""), func(ctx *gin.Context) {
+	router.Any("", func(ctx *gin.Context) {
 		ctx.HTML(http.StatusOK, "index.html", gin.H{
 			"staticRoot": path.Join(*webPrefix, "static"),
 			"title":      "秀哦工作室",
